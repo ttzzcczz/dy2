@@ -228,7 +228,7 @@
             getVideoData(urlInput.value.trim())
                 .then((res) => {
                     setMainButtonLoading(false);
-                    const cardContent = `
+                    const cardContent =
               <li class="widget-card-item">
                 <div class="card-wrapper">
                   <div class="card-main-content">
@@ -290,7 +290,7 @@
                   </div>
                 </div>
               </li>
-      `;
+      ;
                     widgetCardList.insertAdjacentHTML("afterbegin", cardContent);
                     gtag("event", "dl", {
                         event_category: "dl",
